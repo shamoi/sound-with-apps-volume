@@ -16,10 +16,9 @@
 }
     
 .My-sound-seek-box { /* call in Player.prototype ; _dbus_acquired: function()*/
-   padding-left: 5px;
+/*   padding-left: 5px;*/
 }
 .My-sound-seek-slider {/* call in Player.prototype ; _dbus_acquired: function()*/
-   width: 140px;
-   height: 1em;
+/*   width: 140px;*/
 }
 

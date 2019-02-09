@@ -383,7 +383,7 @@ let compatible_players = [
     'deadbeef', 'smplayer', 'tomahawk', 'potamus', 'musique', 'bmp', 'atunes',
     'muine', 'xmms'];
 let support_seek = [
-    'chrome', 'Youtube', 'clementine', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
+    'clementine', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
     'amarok', 'xnoise', 'gmusicbrowser', 'spotify', 'vlc', 'gnome-mplayer',
     'qmmp', 'deadbeef', 'audacious'];
 
@@ -471,7 +471,7 @@ TextImageMenuItem.prototype = {
 
         this.actor = new St.BoxLayout({style_class: style});
         this.actor.add_style_pseudo_class('active');
-        this.icon = new St.Icon({icon_name: icon, icon_type: St.IconType.SYMBOLIC, icon_size: 10});
+        this.icon = new St.Icon({icon_name: icon, icon_type: St.IconType.SYMBOLIC, icon_size: 16});
         this.text = new St.Label({text: text});
         if (align === "left") {
             this.actor.add(this.icon, { span: 0 });
