@@ -375,22 +375,26 @@ const MEDIA_PLAYER_2_NAME = "org.mpris.MediaPlayer2";
 const MEDIA_PLAYER_2_PLAYER_NAME = "org.mpris.MediaPlayer2.Player";
 
 /* global values */
+/* Shamoi - Added chrome and youtube */
 let compatible_players = [
-    'clementine', 'mpd', 'exaile', 'banshee', 'rhythmbox', 'rhythmbox3',
+    'clementine', 'chrome', 'youtube', 'mpd', 'exaile', 'banshee', 'rhythmbox', 'rhythmbox3',
     'pragha', 'quodlibet', 'guayadeque', 'amarok', 'googlemusicframe', 'xbmc',
     'noise', 'xnoise', 'gmusicbrowser', 'spotify', 'audacious', 'vlc',
     'beatbox', 'songbird', 'pithos', 'gnome-mplayer', 'nuvolaplayer', 'qmmp',
     'deadbeef', 'smplayer', 'tomahawk', 'potamus', 'musique', 'bmp', 'atunes',
     'muine', 'xmms'];
 let support_seek = [
-    'clementine', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
+    'clementine', 'chrome', 'youtube', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
     'amarok', 'xnoise', 'gmusicbrowser', 'spotify', 'vlc', 'gnome-mplayer',
     'qmmp', 'deadbeef', 'audacious'];
 
 const VOLUME_NOTIFY_ID = 1;
+
+/* Shamoi */
 const VOLUME_ADJUSTMENT_STEP = 0.01; /* Volume adjustment step in % */
 
-const ICON_SIZE = 26;
+/* Shamoi */
+const ICON_SIZE = 30;
 
 function TrackInfo() {
     this._init.apply(this, arguments);
@@ -746,8 +750,8 @@ Player.prototype = {
     _updatePositionSlider: function(position) {
         this._canSeek = this._getCanSeek();
 
-        if (this._songLength == 0 || position == true)
-            this._canSeek = true
+        if (this._songLength == 0 || position == false)
+            this._canSeek = false
 
         // Clem: The following code was commented out. When the next song started, it resulted in hiding the sound menu, making it hard for the user to repeatedly click on the next song button.
         // There's probably a better fix and this was not tested with players which don't support seeking, but it fixes the regression created by the slider (apparently when the slider is hidden it closes the menu)
