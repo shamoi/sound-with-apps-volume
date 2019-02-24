@@ -375,16 +375,15 @@ const MEDIA_PLAYER_2_NAME = "org.mpris.MediaPlayer2";
 const MEDIA_PLAYER_2_PLAYER_NAME = "org.mpris.MediaPlayer2.Player";
 
 /* global values */
-/* Shamoi - Added chrome and youtube */
 let compatible_players = [
-    'clementine', 'chrome', 'youtube', 'mpd', 'exaile', 'banshee', 'rhythmbox', 'rhythmbox3',
+    'clementine', 'mpd', 'exaile', 'banshee', 'rhythmbox', 'rhythmbox3',
     'pragha', 'quodlibet', 'guayadeque', 'amarok', 'googlemusicframe', 'xbmc',
     'noise', 'xnoise', 'gmusicbrowser', 'spotify', 'audacious', 'vlc',
     'beatbox', 'songbird', 'pithos', 'gnome-mplayer', 'nuvolaplayer', 'qmmp',
     'deadbeef', 'smplayer', 'tomahawk', 'potamus', 'musique', 'bmp', 'atunes',
     'muine', 'xmms'];
 let support_seek = [
-    'clementine', 'chrome', 'youtube', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
+    'clementine', 'banshee', 'rhythmbox', 'rhythmbox3', 'pragha', 'quodlibet',
     'amarok', 'xnoise', 'gmusicbrowser', 'spotify', 'vlc', 'gnome-mplayer',
     'qmmp', 'deadbeef', 'audacious'];
 
