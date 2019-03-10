@@ -3,7 +3,6 @@
 
 ## Changelog 1.3.3 (2019.02.19) :
 
-- Added chrome and youtube to the compatible players and seek support.
 - Added some /* Shamoi */ tags to keep track of what has been modified by me.
 
 
